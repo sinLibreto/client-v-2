@@ -9,6 +9,8 @@ import { NewTitleComponent } from './pages/new-title/new-title.component';
 import { StoryTitleComponent } from './pages/story-title/story-title.component';
 import { ChatRoomsComponent } from './pages/chat-rooms/chat-rooms.component';
 import { SharedModule } from 'src/app/shared/shared.module';
+import { ContentComponent } from './pages/content/content.component';
+import { ComponentsModule } from 'src/app/components/components.module';
 
 
 @NgModule({
@@ -18,12 +20,14 @@ import { SharedModule } from 'src/app/shared/shared.module';
     FiltrTabsComponent,
     NewTitleComponent,
     StoryTitleComponent,
-    ChatRoomsComponent
+    ChatRoomsComponent,
+    ContentComponent
   ],
   imports: [
     CommonModule,
     DashboardRoutingModule,
-    SharedModule
+    SharedModule,
+    ComponentsModule
   ]
 })
 export class DashboardModule { }

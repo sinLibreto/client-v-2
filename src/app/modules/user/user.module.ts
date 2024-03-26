@@ -4,7 +4,6 @@ import { CommonModule } from '@angular/common';
 import { UserRoutingModule } from './user-routing.module';
 import { UserComponent } from './user.component';
 import { ProfileComponent } from './pages/profile/profile.component';
-import { AsidesModule } from 'src/app/components/asides/asides.module';
 import { AboutMeComponent } from './pages/about-me/about-me.component';
 import { CreatePostUserComponent } from './pages/create-post-user/create-post-user.component';
 import { GetPostUserComponent } from './pages/get-post-user/get-post-user.component';
@@ -33,12 +32,11 @@ import { UserProfileComponent } from './pages/user-profile/user-profile.componen
     FriendsComponent,
     SobreMeComponent,
     UserProfileComponent,
-    
+
   ],
   imports: [
     CommonModule,
     UserRoutingModule,
-    AsidesModule
   ]
 })
 export class UserModule { }

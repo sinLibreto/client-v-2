@@ -1,0 +1,49 @@
+.chat-rooms {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  overflow-x: auto; /* Mantiene la capacidad de desplazamiento */
+  /* Nuevo: Oculta la barra de desplazamiento */
+  -ms-overflow-style: none;  /* IE y Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+/* Nuevo: Oculta la barra de desplazamiento para Webkit (Chrome, Safari, etc.) */
+.chat-rooms::-webkit-scrollbar {
+  display: none;
+}
+
+.chat-publicos img {
+  border-radius: 50%;
+  object-fit: cover;
+  width: 100px;
+  height: 100px;
+}
+
+.chat-publicos {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #fff;
+}
+
+.chat-rooms li {
+  display: inline-block;
+  margin-right: 20px;
+  animation: slide 10s linear infinite;
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}

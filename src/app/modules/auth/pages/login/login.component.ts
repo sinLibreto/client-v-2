@@ -23,8 +23,8 @@ export class LoginComponent implements OnInit, OnDestroy {
     private store: Store<AuthState>
   ) {
     this.loginForm = this.fb.group({
-      username: [localStorage.getItem('username') || 'danny', [Validators.required]],
-      password: ['dym123', [Validators.required]],
+      username: [localStorage.getItem('username') || '', [Validators.required]],
+      password: ['', [Validators.required]],
       rememberme: [false]
     });
     this.loading$ = this.store.select(selectAuthLoading);

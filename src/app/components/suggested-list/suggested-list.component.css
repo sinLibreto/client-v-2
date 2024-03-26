@@ -1,0 +1,8 @@
+.suggested-caro {
+  display: flex; /* Activa Flexbox */
+  flex-direction: row; /* Alinea los elementos de forma horizontal */
+  justify-content: space-around; /* Distribuye el espacio uniformemente entre los elementos */
+  align-items: center; /* Alinea los elementos verticalmente al centro */
+  list-style: none; /* Remueve los estilos por defecto de lista */
+  padding: 0; /* Remueve el padding por defecto */
+}
