@@ -1,0 +1,75 @@
+<header class="">
+  <div class="topbar stick">
+    <div class="logo cursor-po"><img src="assets/images/logo.png" alt=""><span routerLink="/">yabaam</span></div>
+    <div class="searches">
+      <form method="post">
+        <input type="text" placeholder="Search...">
+        <button type="submit"><i class="icofont-search"></i></button>
+        <span class="cancel-search"><i class="icofont-close"></i></span>
+        <div class="recent-search">
+          <h4 class="recent-searches">resultados recientes</h4>
+          <ul class="so-history">
+        <!-- aqui busquedas recientes -->
+          </ul>
+        </div>
+      </form>
+    </div>
+    <ul class="web-elements">
+      <li>
+        <div class="user-dp">
+          <a routerLink="user" title="">
+            <img *ngIf="profilePictureUrl" [src]="profilePictureUrl" alt="User profile picture">
+            <div class="name">
+              <h4>{{ user?.user?.username }}</h4>
+              <!-- <h4>{{ user?.user?.occupation }}</h4> -->
+
+            </div>
+          </a>
+        </div>
+      </li>
+
+      <li>
+        <a href="index.html" title="Home" data-toggle="tooltip">
+          <i>
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-home"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg></i>
+        </a>
+      </li>
+      <li>
+        <a class="mesg-notif" href="#" title="Messages" data-toggle="tooltip">
+          <i>
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-square"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg></i>
+        </a>
+        <span></span>
+      </li>
+      <li>
+        <a class="mesg-notif" href="#" title="Notifications" data-toggle="tooltip">
+          <i>
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bell"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path><path d="M13.73 21a2 2 0 0 1-3.46 0"></path></svg></i>
+        </a>
+        <span></span>
+      </li>
+      <li>
+        <a class="create" href="#" title="Add New" data-toggle="tooltip">
+          <i>
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-plus"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg></i>
+        </a>
+      </li>
+      <li>
+        <a href="#" title="">
+          <i>
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-grid"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
+          </i>
+        </a>
+        <ul class="dropdown">
+          <li><a routerLink="/user/user-profile" ><i class="icofont-user-alt-3"></i> Perfil</a></li>
+          <li><a  ><i class="icofont-question-circle"></i> Help</a></li>
+          <li><a routerLink="/settings" ><i class="icofont-gear"></i> Setting</a></li>
+          <li><a  ><i class="icofont-notepad"></i> Privacy</a></li>
+          <li><a class="dark-mod" ><i class="icofont-moon"></i> Dark Mode</a></li>
+          <li class="logout"><a (click)="logout()"><i class="icofont-power"></i>Salir</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+</header>

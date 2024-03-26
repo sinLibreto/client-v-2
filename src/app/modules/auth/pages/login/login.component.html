@@ -1,0 +1,40 @@
+<div class="theme-layout">
+
+	<div class="authtication animated-circ">
+		<div class="mockups"></div>
+
+	</div>
+	<div class="auth-login">
+
+		<div class="verticle-center">
+			<div class="login-form">
+				<h4>Ingresar </h4>
+				<form method="post" class="c-form" (ngSubmit)="onLogin()" [formGroup]="loginForm" autocomplete="off">
+					<div class="fileds">
+						<label class="input-icon">
+							<i class="fa-solid fa-user"></i></label>
+						<input  formControlName="username"  type="email" placeholder="Username">
+					</div>
+					<div class="fileds">
+						<label class="input-icon">
+							<i class="fa-solid fa-lock-open"></i></label>
+							<input formControlName="password" type="password" placeholder="Password">
+					</div>
+					<div class="checkbox">
+						<input formControlName="rememberme" type="checkbox" id="checkbox" checked>
+						<label for="checkbox"><span>Recordar contraseña</span></label>
+						<a routerLink="/auth/forgot-password" >Recuperar contraseña</a>
+					</div>
+					<button class="main-btn" type="submit">Login</button>
+					<span class="no-account">No tienes una cuenta? <a routerLink="/auth/register">Registrate</a></span>
+          <div class="bottambar2">
+            <p>Al registrarse esta acetando los terminos  <a routerLink="/terminos" > Privacy Policy</a> and use of <a routerLink="/auth/register" > Cookies</a>.</p>
+          </div>
+
+				</form>
+
+			</div>
+		</div>
+	</div>
+
+</div>

@@ -1,0 +1,60 @@
+
+<div class="profile-header-container">
+  <img class="profile-banner img-fluid" src="{{ bgImageVersion || 'assets/images/resources/profile-banner.jpg' }}" alt="Portada" />
+
+  <div class="profile-picture-container">
+    <img class="profile-picture rounded-circle shadow" src="{{ profilePicture || 'assets/images/resources/user.jpg' }}" alt="Usuario" />
+  </div>
+</div>
+
+
+
+<div class="grp-info about">
+  <h4>{{ username }} <span>Georgofficial</span></h4>
+
+
+  <ul class="nav nav-tabs about-btn">
+      <li class="nav-item">
+          <a class="active" href="#posts" data-toggle="tab">Publicaciones</a>
+      </li>
+      <li class="nav-item">
+          <a class="" href="#pictures" data-toggle="tab">Imagenes</a>
+      </li>
+      <li class="nav-item">
+          <a class="" href="#videos" data-toggle="tab">Videos</a>
+      </li>
+      <li class="nav-item">
+          <a class="" href="#friends" data-toggle="tab">Amigos</a>
+      </li>
+      <li class="nav-item">
+          <a class="" href="#about" data-toggle="tab">Sobre mi</a>
+      </li>
+  </ul>
+  <ul class="more-grp-info">
+      <li>
+          <div class="more">
+              <div class="more-post-optns">
+                  <i class="">
+                      <svg class="feather feather-more-horizontal"
+                          stroke-linejoin="round" stroke-linecap="round"
+                          stroke-width="2" stroke="currentColor" fill="none"
+                          viewBox="0 0 24 24" height="24" width="24"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <circle r="1" cy="12" cx="12" />
+                          <circle r="1" cy="12" cx="19" />
+                          <circle r="1" cy="12" cx="5" />
+                      </svg></i>
+                  <ul>
+                      <li>
+                          <i class="icofont-pen-alt-1"></i>Editar imagen de perfil
+                      </li>
+                      <li>
+                          <i class="icofont-pen-alt-1"></i>Editar imagen de portada
+                      </li>
+
+                  </ul>
+              </div>
+          </div>
+      </li>
+  </ul>
+</div>

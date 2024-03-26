@@ -1,0 +1,86 @@
+<div class="theme-layout">
+  <section>
+      <div class="gap">
+          <div class="container">
+              <div class="row">
+                  <div class="col-lg-12">
+                      <div id="page-contents" class="row merged20">
+                          <div class="col-lg-3">
+                              <aside class="sidebar static left">
+                                  <div class="widget">
+                                    <!-- mis grupos -->
+                                     <app-widget-grupos></app-widget-grupos>
+                                     <!-- <app-user-profile></app-user-profile> -->
+                                  </div>
+                                  <!-- recomendaciones -->
+                                  <div class="widget">
+                                      <app-widget-recomendaciones></app-widget-recomendaciones>
+                                  </div>
+
+                                  <div class="widget">
+                                     <app-widget-publicidad></app-widget-publicidad>
+                                  </div>
+                              </aside>
+                          </div>
+                          <div class="col-lg-9">
+                              <div class="group-feed">
+                                  <app-profile></app-profile>
+
+                                  <div class="main-wraper">
+                                      <div class="grp-about">
+                                          <div class="row">
+                                              <app-about-me></app-about-me>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="row">
+                                      <div class="col-lg-12">
+                                          <div class="tab-content">
+                                              <div class="tab-pane active fade show" id="posts">
+                                                  <div class="row merged20">
+                                                      <div class="col-lg-8">
+                                                         <app-create-post-user></app-create-post-user>
+                                                          <!-- create new post -->
+                                                          <div class="main-wraper">
+                                                              <app-get-post-user></app-get-post-user>
+                                                          </div>
+                                                          <!-- share post without image -->
+
+
+                                                          <!-- video playlist carousel -->
+                                                          <div class="main-wraper">
+                                                             <app-get-post-user-videos></app-get-post-user-videos>
+                                                          </div>
+                                                          <!-- share image with post -->
+                                                          <div class="main-wraper">
+                                                              <app-get-post-user-images></app-get-post-user-images>
+                                                          </div>
+
+                                                      </div>
+
+                                                  </div>
+                                              </div>
+                                              <div class="tab-pane fade" id="pictures">
+                                                  <app-pictures></app-pictures>
+                                              </div>
+                                              <div class="tab-pane fade" id="videos">
+                                                 <app-videos></app-videos>
+                                              </div>
+                                              <div class="tab-pane fade" id="friends">
+                                                 <app-friends></app-friends>
+                                              </div>
+                                              <div class="tab-pane fade" id="about">
+                                                  <app-sobre-me></app-sobre-me>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+</div>

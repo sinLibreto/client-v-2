@@ -1,0 +1,6 @@
+.page-caro {
+  display: flex; /* Activa Flexbox */
+  flex-direction: row; /* Alinea los elementos de forma horizontal */
+  justify-content: space-around; /* Distribuye el espacio uniformemente */
+  align-items: center; /* Centra los elementos verticalmente */
+}

@@ -1,0 +1,47 @@
+/*--- carousel menu ---*/
+/* .sidemenu {
+  display: inline-block;
+  line-height: 57px;
+  vertical-align: middle;
+}
+.sidemenu > i{
+cursor: pointer;
+position: relative;
+}
+.sidemenu > i::before,
+.res-search > span:before {
+  background: #deebf3 none repeat scroll 0 0;
+  border-radius: 100%;
+  content: "";
+  height: 40px;
+  left: 50%;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: all 0.2s linear 0s;
+  visibility: hidden;
+  width: 40px;
+  z-index: -1;
+}
+.sidemenu > i:hover::before,
+.res-search > span:hover:before {
+  opacity: 1;
+  transform: translate(-50%, -47%) scale(1);
+  visibility: visible;
+} */
+/*--- carousel menu ---*/
+
+/* .page-caro{
+background-color: chocolate;
+} */
+
+.page-caro {
+  display: flex; /* Activa Flexbox */
+  flex-direction: row; /* Alinea los elementos de forma horizontal */
+  justify-content: space-around; /* Distribuye el espacio uniformemente */
+  align-items: center; /* Centra los elementos verticalmente */
+}
+.router{
+  background-color: brown;
+}

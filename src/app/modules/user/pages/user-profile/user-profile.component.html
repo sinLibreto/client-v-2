@@ -1,0 +1,16 @@
+<!-- src/app/modules/user/pages/user-profile/user-profile.component.html -->
+
+<div *ngIf="userProfile$ | async as userProfile; else loadingOrError">
+  <h2>Perfil de Usuario: {{ userProfile.username }}</h2>
+  <!-- <img [src]="userProfile.profilePicture" alt="Imagen de perfil"> -->
+  <!-- Muestra más información del perfil aquí -->
+</div>
+
+<ng-template #loadingOrError>
+  <div *ngIf="loading$ | async; else showError">Cargando perfil del usuario...</div>
+  <ng-template #showError>
+    <div *ngIf="error$ | async as error">
+      Error: {{ error }}
+    </div>
+  </ng-template>
+</ng-template>

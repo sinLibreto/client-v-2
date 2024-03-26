@@ -1,0 +1,56 @@
+<div class="authtication high-opacity">
+  <div class="verticle-center">
+    <div class="welcome-note">
+      <div class="logo">
+        <img src="" alt=""><span>Yabaam</span>
+      </div>
+    </div>
+    <div class="bg-image" style="background-image: url(assets/images/resources/register.jpg)"></div>
+  </div>
+</div>
+
+<div class="auth-login">
+  <div class="verticle-center">
+    <div class="signup-form">
+      <h4>Registrarse</h4>
+      <form class="c-form" (ngSubmit)="onRegister()" [formGroup]="registerForm">
+        <div class="row merged-10">
+          <div class="col-lg-6 col-sm-6 col-md-6">
+            <div class="fileds">
+              <label class="input-icon"><i class="fa-solid fa-user"></i></label>
+              <input formControlName="username" class="mb-2" type="text" placeholder="Nombre">
+            </div>
+          </div>
+          <div class="col-lg-6 col-sm-6 col-md-6">
+            <div class="fileds">
+              <label class="input-icon"><i class="fa-solid fa-at"></i></label>
+              <input formControlName="email" class="mb-2" type="email" placeholder="Email">
+            </div>
+          </div>
+          <div class="col-lg-6 col-sm-6 col-md-6">
+            <div class="fileds">
+              <label class="input-icon"><i class="fa-solid fa-lock"></i></label>
+              <input formControlName="password" autocomplete="new-password" class="mb-2" type="password" placeholder="Contraseña">
+            </div>
+          </div>
+          <div class="col-lg-6 col-sm-6 col-md-6">
+            <div class="fileds">
+              <label class="input-icon"><i class="fa-solid fa-lock"></i></label>
+              <input formControlName="repassword" autocomplete="new-password" class="mb-2" type="password" placeholder="Repetir contraseña">
+            </div>
+          </div>
+          <div class="col-lg-12">
+            <div class="checkbox">
+              <input type="checkbox" id="checkbox" formControlName="terms">
+              <label for="checkbox"><span>Acepto los términos de servicio y reconozco la política de privacidad</span></label>
+            </div>
+            <button class="main-btn" type="submit"><i class="icofont-key"></i> Registrarse</button>
+          </div>
+        </div>
+      </form>
+      <!-- Indicadores de carga y mensajes de error -->
+      <div *ngIf="isLoading$ | async" class="loading-indicator">Registrando...</div>
+      <div *ngIf="error$ | async as error" class="error-message">Error: {{ error }}</div>
+    </div>
+  </div>
+</div>
